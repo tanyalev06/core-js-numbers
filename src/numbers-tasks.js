@@ -650,12 +650,7 @@ function getHypotenuse(a, b) {
  * 15 => 8
  */
 function getCountOfOddNumbers(number) {
-  let rez = 0;
-    if (number % 2 !== 0 && number !== 0) {
-      nums = number.filter.is
-      rez += 1;
-    }
-  return rez;
+  return Math.ceil(Math.abs(number) / 2);
 }
 module.exports = {
   getRectangleArea,
