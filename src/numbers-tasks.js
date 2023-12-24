@@ -632,8 +632,8 @@ function getRandomInteger(min, max) {
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse(/* a, b */) {
-  throw new Error('Not implemented');
+function getHypotenuse(a, b) {
+  return Math.hypot(a, b);
 }
 
 /**
@@ -649,10 +649,14 @@ function getHypotenuse(/* a, b */) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(/* number */) {
-  throw new Error('Not implemented');
+function getCountOfOddNumbers(number) {
+  let rez = 0;
+    if (number % 2 !== 0 && number !== 0) {
+      nums = number.filter.is
+      rez += 1;
+    }
+  return rez;
 }
-
 module.exports = {
   getRectangleArea,
   getCircleCircumference,
